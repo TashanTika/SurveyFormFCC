@@ -12,18 +12,60 @@
     <form id="survey-form">
         <div>
             <label id="name">Name</label>
-            <input type="text" id="name-label" placeholder="Enter your name">
+            <input type="text" id="name-label" placeholder="Enter your name" required>
         </div>
 
         <div>
             <label id="email">Email Address</label>
-            <input type="email" id="email-label" placeholder="Enter your Email Address">
+            <input type="email" id="email-label" placeholder="Enter your Email Address" required>
         </div>
 
         <div>
             <label id="number">Age</label>
-            <input type="number" id="number-label" placeholder="Enter your age..">
+            <input type="number" id="number-label" placeholder="Enter your age.." required>
         </div>
+        
+        <div>
+        <label>Which option best describes your current role?</label>
+        <select class="dropdown">
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer Not To Say</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+        
+        <div>
+        <label>Would you recommend freeCodeCamp to a buddy?</label>
+        <br>
+        Definitely<input type="radio" name=recommend>
+        Maybe<input type="radio" name=recommend>
+        Not Sure<input type="radio" name=recommend>
+        </div>
+
+        <div>
+            <label>What would you like to see improved? <small>Click all that apply</small></label>
+            <br>
+            <input type="checkbox" value="front-end-projects">Front-end Projects
+            <input type="checkbox" value="back-end-projects">Back-end Projects
+            <input type="checkbox" value="data-visualization">Data Visualization
+            <input type="checkbox" value="challenges">Challenges
+            <input type="checkbox" value="open-source-community">Open Source Community
+            <input type="checkbox" value="gitter-help-rooms">Gitter help rooms
+            <input type="checkbox" value="videos">Videos
+            <input type="checkbox" value="city-meet-ups">City Meetups
+            <input type="checkbox" value="wiki">Wiki
+            <input type="checkbox" value="forum">Forum
+            <input type="checkbox" value="additional-courses">Additional Courses
+        </div>
+
+        <div>
+            <label id="comments">Additonal Comments</label>
+            <textarea name="comment" id="comment" placeholder="additional comments"></textarea>
+        </div>
+
+        <button type="submit" id="submit-button">Submit</button>
     </form>
 </body>
 </html>
