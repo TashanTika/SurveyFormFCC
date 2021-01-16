@@ -1,9 +1,14 @@
 #title{
     text-align: center;
     font-size: 50px;
+    font-family: 'Crimson Text', 'san serif';
 }
 
 body{
-    background-color: navy;
-    
+    background-image: url('images/mountain.jpg');
+    max-width: 500px;
+    margin: 0 auto;
+    border: solid;
+    margin-top: 50px;
+    font-family: 'Work Sans', 'san serif';
 }

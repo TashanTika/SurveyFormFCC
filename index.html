@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form freeCodeCamp</title>
-    ><link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700|Arial">
 </head>
 <body>
   <h1 id="title">Survey Form</h1>  
   <p id="description">Thank you for taking your time to complete this survey</p>
     <form id="survey-form">
         <div>
-            <label id="name">Name</label>
-            <input type="text" id="name-label" placeholder="Enter your name" required>
+            <label id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
         </div>
 
         <div>
-            <label id="email">Email Address</label>
-            <input type="email" id="email-label" placeholder="Enter your Email Address" required>
+            <label id="email-label">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your Email Address" required>
         </div>
 
         <div>
-            <label id="number">Age</label>
-            <input type="number" id="number-label" placeholder="Enter your age.." required>
+            <label id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Enter your age.." min="1" max="150" required>
         </div>
         
         <div>
         <label>Which option best describes your current role?</label>
-        <select class="dropdown">
+        <select id="dropdown">
             <option value="student">Student</option>
             <option value="full-time-job">Full Time Job</option>
             <option value="full-time-learner">Full Time Learner</option>
@@ -39,9 +40,9 @@
         <div>
         <label>Would you recommend freeCodeCamp to a buddy?</label>
         <br>
-        Definitely<input type="radio" name=recommend>
-        Maybe<input type="radio" name=recommend>
-        Not Sure<input type="radio" name=recommend>
+        Definitely<input type="radio" name=recommend value="definitely">
+        Maybe<input type="radio" name=recommend value="maybe">
+        Not Sure<input type="radio" name=recommend value="not-sure">
         </div>
 
         <div>
@@ -65,7 +66,11 @@
             <textarea name="comment" id="comment" placeholder="additional comments"></textarea>
         </div>
 
-        <button type="submit" id="submit-button">Submit</button>
+        <button type="submit" id="submit">Submit</button>
     </form>
 </body>
 </html>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
